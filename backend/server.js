@@ -1,4 +1,10 @@
-const express = require('express')
+import express from 'express'
+import dotenv from 'dotenv'
+import connectDB from './config/db.js'
+
+dotenv.config()
+
+connectDB()
 
 const app = express()
 
@@ -10,4 +16,6 @@ app.get('/api/data', (req, res) => {
   res.json('data data is here')
 })
 
-app.listen(5000, console.log('server started'))
+const PORT = process.env.PORT
+
+app.listen(PORT, console.log('server started'))
