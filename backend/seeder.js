@@ -1,8 +1,7 @@
-import mongoose from 'mongoose'
 import dotenv from 'dotenv'
+import connectDB from './config/db.js'
 import gigs from './data/gigDummyData.js'
 import Gig from './models/gigModel.js'
-import connectDB from './config/db.js'
 
 dotenv.config()
 
