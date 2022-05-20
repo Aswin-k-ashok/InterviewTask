@@ -1,4 +1,12 @@
 import express from 'express'
-import { addGig } from '../controllers/gigControllers.js'
+import {
+  addGig,
+  getAllGigs,
+  deleteGigs,
+} from '../controllers/gigControllers.js'
 
 const router = express.Router()
+
+router.route('/').get(getAllGigs).post(addGig)
+router.route('/:id').delete(deleteGigs)
+export default router
