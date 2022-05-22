@@ -35,7 +35,7 @@ const deleteGigs = asyncHandler(async (req, res) => {
     res.json({ message: 'gig and data remove' })
   } else {
     res.status(404)
-    throw new Error('gig not found / not removed')
+    throw new Error('gig not found')
   }
 })
 
