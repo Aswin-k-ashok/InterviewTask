@@ -94,7 +94,7 @@ function GigCards() {
     return (
         <>
             <div style={{ backgroundColor: '#FFF', padding: "2em" }}>
-                <NewGigForm />
+                <NewGigForm refreshProp={setRefresh} />
 
                 {gigData.length <= 0 ? (<h1>no gigs</h1>) : (
 

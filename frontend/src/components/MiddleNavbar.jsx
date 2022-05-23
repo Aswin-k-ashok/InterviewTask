@@ -28,25 +28,27 @@ function MiddleNavbar() {
 
 
     return (
-        <MiddleBar>
-            <Box sx={{ maxWidth: { xs: 300, sm: 480, }, bgcolor: 'background.paper' }}>
-                <Tabs
-                    value={value}
-                    onChange={handleChange}
-                    variant="scrollable"
-                    scrollButtons
-                    allowScrollButtonsMobile
-                    aria-label="scrollable force tabs example"
-                >
-                    <Tab label="All" />
-                    <Tab label="Open" />
-                    <Tab label="Compleated" />
-                    <Tab label="Cancelled" />
+        <>
+            <MiddleBar>
+                <Box sx={{ maxWidth: { xs: 300, sm: 480, }, bgcolor: 'background.paper' }}>
+                    <Tabs
+                        value={value}
+                        onChange={handleChange}
+                        variant="scrollable"
+                        scrollButtons
+                        allowScrollButtonsMobile
+                        aria-label="scrollable force tabs example"
+                    >
+                        <Tab label="All" />
+                        <Tab label="Open" />
+                        <Tab label="Compleated" />
+                        <Tab label="Cancelled" />
 
-                </Tabs>
-            </Box>
+                    </Tabs>
+                </Box>
 
-        </MiddleBar>
+            </MiddleBar>
+        </>
     )
 }
 

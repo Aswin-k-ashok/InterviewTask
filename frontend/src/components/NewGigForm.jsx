@@ -24,7 +24,7 @@ const style = {
 
 };
 
-export default function NewGigForm() {
+export default function NewGigForm({ setRefersh }) {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -38,11 +38,13 @@ export default function NewGigForm() {
         axios.post('/api/gig', {
             name, budget, date: value
         })
+        setRefersh(true)
+
     }
 
     useEffect(() => {
 
-    }, [submitHandler, handleOpen])
+    }, [submitHandler, handleOpen,])
 
 
     return (

@@ -16,11 +16,11 @@ function App() {
 
           <VerticalTabs />
         </Grid>
-        <Grid item sm={11} container style={{ position: "absolute", left: "7.5em" }}>
+        <Grid item sm={11} container style={{ position: "absolute", left: "5.1em", width: '100%' }}>
 
-          <MainHeader />
 
           <Grid item sm={12} >
+            <MainHeader />
 
             <MiddleNavbar />
             <GigCards />
