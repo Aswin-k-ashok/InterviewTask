@@ -47,6 +47,8 @@ function MiddleNavbar() {
                     </Tabs>
                 </Box>
 
+
+
             </MiddleBar>
         </>
     )

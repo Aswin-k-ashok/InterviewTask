@@ -38,7 +38,7 @@ export default function NewGigForm({ setRefersh }) {
         axios.post('/api/gig', {
             name, budget, date: value
         })
-        setRefersh(true)
+        window.location.reload();
 
     }
 
